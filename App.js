@@ -19,7 +19,7 @@ app.use(
     })
 );
 const sessionOptions = {
-    secret: process.env.SESSION_SECRET,
+    secret: process.env.SESSION_SECRET || "default", 
     resave: false,
     saveUninitialized: false,
 };
