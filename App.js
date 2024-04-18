@@ -15,7 +15,7 @@ const port = process.env.PORT || 4000;
 app.use(
     cors({
         credentials: true,
-        origin: process.env.FRONTEND_URL
+        origin: [process.env.FRONTEND_URL, "http://localhost:3000"]
     })
 );
 const sessionOptions = {
